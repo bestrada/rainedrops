@@ -38,7 +38,8 @@ body {
     font-family: 'Pacifico', cursive;
     font-size:300%;
 }
+a { color:#333; }
+a:hover, a.symbol:hover { text-decoration:none; color:#cc3366; }
 a.symbol { color:#666; }
-a.symbol:hover { text-decoration:none; color:#DA4453; }
 a.symbol.fb:hover { color:#3B5998; }
 a.symbol.tw:hover { color:#55acee; }
