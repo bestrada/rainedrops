@@ -32,14 +32,25 @@ a.symbol:before {
 
 body {
     background-color:#f1f1f1;
-    color:#333;
+    color:#444;
 }
 .title {
     font-family: 'Pacifico', cursive;
     font-size:300%;
 }
-a { color:#333; }
-a:hover, a.symbol:hover { text-decoration:none; color:#cc3366; }
-a.symbol { color:#666; }
-a.symbol.fb:hover { color:#3B5998; }
-a.symbol.tw:hover { color:#55acee; }
+a { color:#444; }
+a:hover { text-decoration:none; color:#cc3366; }
+a .symbol { font-size:150%; }
+a.facebook .symbol:hover { color:#3B5998; }
+a.twitter .symbol:hover { color:#55acee; }
+a.etsy .symbol:hover { color:#D35801; }
+
+/* no hover state for phones, so do colors */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  a .symbol { color:#cc3366; }
+  a.facebook .symbol { color:#3B5998; }
+  a.twitter .symbol { color:#55acee; }
+  a.etsy .symbol { color:#D35801; }
+}
